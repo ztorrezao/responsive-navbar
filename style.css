@@ -70,7 +70,8 @@ nav {
     background-color: #5d4954;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%)
+    transform: translateX(100%);
+    transition: transform .5s;
   }
 
   .nav-link li {
@@ -85,5 +86,17 @@ nav {
 }
 
 .nav-active {
-  transform: translateX(0);
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
