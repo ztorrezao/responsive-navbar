@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +13,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  height: 12vh;
   background-color: #004643;
 
   font-family: "Poppins", sans-serif;
@@ -111,4 +116,11 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1561932360-2cb3c125f399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
 }
